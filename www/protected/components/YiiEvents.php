@@ -1,4 +1,9 @@
 <?php
+/*
+ * Yii Event component
+ * provides cross thread event functionality
+ */
+
 
 class YiiEvents extends CApplicationComponent{
     

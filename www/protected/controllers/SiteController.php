@@ -2,10 +2,6 @@
 
 class SiteController extends Controller {
 
-	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
-	 */
 	private function _getName() {
 		$name = Yii::app()->session->get('userName');
 		if (empty($name)) {
@@ -101,7 +97,11 @@ class SiteController extends Controller {
 		}
 	}
 
-	public function actionIndex() {
+	/**
+	 * This is the default 'index' action that is invoked
+	 * when an action is not explicitly requested by users.
+	 */
+        public function actionIndex() {
 
 		$name = $this->_getName();
 
